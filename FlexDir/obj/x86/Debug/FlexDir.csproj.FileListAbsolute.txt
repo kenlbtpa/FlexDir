@@ -1,0 +1,6 @@
+c:\users\kenneth l\documents\visual studio 2010\Projects\FlexDir\FlexDir\bin\Debug\FlexDir.exe
+c:\users\kenneth l\documents\visual studio 2010\Projects\FlexDir\FlexDir\bin\Debug\FlexDir.pdb
+c:\users\kenneth l\documents\visual studio 2010\Projects\FlexDir\FlexDir\obj\x86\Debug\FlexDir.Properties.Resources.resources
+c:\users\kenneth l\documents\visual studio 2010\Projects\FlexDir\FlexDir\obj\x86\Debug\FlexDir.csproj.GenerateResource.Cache
+c:\users\kenneth l\documents\visual studio 2010\Projects\FlexDir\FlexDir\obj\x86\Debug\FlexDir.exe
+c:\users\kenneth l\documents\visual studio 2010\Projects\FlexDir\FlexDir\obj\x86\Debug\FlexDir.pdb
