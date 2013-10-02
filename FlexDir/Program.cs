@@ -61,19 +61,21 @@ namespace FlexDir
                 Console.WriteLine(files[i]);
             }
 
-            Console.WriteLine("\nRegex Sorted");
+            Console.WriteLine("\nRegex Sorted\n");
 
             /** Get your sorting regex **/
-            Regex fileSortRegex = new Regex(@"\[.*?\]");
+            //Regex fileSortRegex = new Regex(@"\[.*?\]");
+            Regex fileSortRegex = new Regex(@"(?<=\]).*?(?=\[)");
             for (int i = 0; i < files.Count; i++)
             {
-
-                //Console.WriteLine(fileSortRegex.Match(files[i]));
                 Match regexMatch = fileSortRegex.Match(files[i]);
+                if (regexMatch.ToString().Trim() == String.Empty) { continue; } // skips the empty ones. 
                 for (int j = 0; j < files.Count; j++)
                 {
+                    if (files[j].Trim() == String.Empty) { continue; } // skips the empty ones.
+
                     if (i == j) { continue; }
-                    ApproximateMatcher.Approximate( fileSortRegex.Match(files[i]).ToString() , fileSortRegex.Match(files[i]).ToString() ); 
+                    ApproximateMatcher.Approximate( fileSortRegex.Match(files[i]).ToString() , fileSortRegex.Match(files[j]).ToString() ); 
                 }
             }
 
